@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    /* flex-direction: row; 
+    flex-wrap: wrap;    Combine 2 properties into flex-flow shorthand */ 
+    flex-flow: row wrap;
+    width: 100%;
+    border: 1px dotted lightblue;
+}
+
+.inner-box {
+    width: 35%;
+    border: 2px solid lightskyblue;
+    background-color: aliceblue;
+}
+
+.box2 {
+    display: flex;
+    border: 1px dotted grey;
+    justify-content: center;    /* Main Axis */
+    align-items: center;    /* Cross Axis */
+    width: 100%;
+    height: 10vh;   /* Height explicitly given so we could see the align-items property in play */
+}
+
+.inner-box2 {
+    border: 1px solid darkgrey;
+}
+
+.test {
+    align-self: flex-end;   /* Aligning individual flex item (along the cross-axis) */
+    border: 1px solid grey; 
+}
+
+.box3 {
+    display: flex;
+    width: 100%;
+    border: 1px dotted purple;
+    flex-flow: wrap row-reverse;    /* When flex direction is row reverse, and when you justify content as flex-start it would cause items to be justified to the right. If you justify content to start it would be justified to the right */
+    justify-content: flex-start;
+}
+
+.box4 {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    border: 1px dotted red;
+    gap: 20px 50px;      /* row-gap creates gap between flex-lines and column-gap creates gaps between items on the main-axis. Shorthand -> gap : row-gap column-gap; */
+}
+
+.box5 {
+    display: flex;
+    border: 1px dotted blue;
+    height: 200px;
+    flex-flow: row wrap;
+    align-content:space-around; /* align-content property sets the distribution of space between and around content items along a flexbox's cross-axis */
+    justify-content:space-evenly;
+}
+
+.box6 {
+    display: flex;
+    border: 1px dotted greenyellow;
+    height: 340px;
+    flex-flow: column wrap;
+    align-content: space-around;
+}
