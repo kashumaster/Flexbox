@@ -58,7 +58,7 @@
     border: 1px dotted blue;
     height: 200px;
     flex-flow: row wrap;
-    align-content:space-around; /* align-content property sets the distribution of space between and around content items along a flexbox's cross-axis */
+    align-content:space-around; /* align-content property sets the distribution of space between and around content items along a flexbox's cross-axis. */
     justify-content:space-evenly;
 }
 
